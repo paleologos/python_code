@@ -1,0 +1,5 @@
+ip_str="Wireless LAN adapter Wi-Fi: Connection-specific DNS Suffix  . : Link-local IPv6 Address . . . . . : fe80::6d2b:59ac:de7b:1a73%27 IPv4 Address. . . . . . . . . . . : 192.168.1.108 Subnet Mask . . . . . . . . . . . : 255.255.255.0 Default Gateway . . . . . . . . . : 192.168.1.1"
+print("RAW: ")
+print(ip_str)
+print("FORMATIRAN: ")
+print((((((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ",""))[(((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ","")).index("IP")):])[(((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ",""))[(((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ","")).index("IP")):]).index("IPv4"):]).strip(" ")+','+((((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ",""))[(((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ","")).index("IP")):])[:(((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ",""))[(((ip_str[ip_str.index("Link-"): (ip_str.index("Subn"))]).replace(". ","")).index("IP")):]).index("IPv4")]).strip(" ")).split(","))
