@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[52]:
+# In[57]:
 
 
 class PrimaryClass():
@@ -63,6 +63,16 @@ secondaryObj.printVal(3)
 secondaryObj.calcSecondary(2)
 
 secondaryObj.calcTotalValue(2)
+
+#issubclass
+class SecondaryClass2():
+    pass
+
+cl=SecondaryClass
+if issubclass(cl, PrimaryClass):
+    print('Class is child of PrimaryClass')
+else:
+    print('Class is not child')
 
 
 # In[ ]:
